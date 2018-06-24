@@ -5,6 +5,16 @@
 //Text is ingnored
 //Display in JSON Format
 
+// <div>
+//Test Test Text
+// <a>
+// <span></span> // <span></span>
+// </a>
+// <a>
+// <span></span>
+// </a>
+// </div>
+
 var elements = document.getElementsByTagName('div')
 var element = elements[0]
 
