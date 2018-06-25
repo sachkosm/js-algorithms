@@ -1,0 +1,9 @@
+node_modules
+
+# Logs
+logs
+*.log
+*.bat
+
+# Mac specific
+DS_Store
