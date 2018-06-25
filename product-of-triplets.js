@@ -1,7 +1,7 @@
 // A non-empty array A consisting of N integers is given. The product of triplet (P, Q, R) equates to A[P] * A[Q] * A[R] (0 ≤ P < Q < R < N).
 //
 // For example, array A such that:
-// 
+//
 //   A[0] = -3
 //   A[1] = 1
 //   A[2] = 2
@@ -47,7 +47,7 @@ function solution(A) {
     var s=  A.sort((a,b)=>b-a)
     //console.log(s)
     var len = s.length
-    var combAllPostive = s[0] * s[1] * s[2]
+    var combAllPositive = s[0] * s[1] * s[2]
     var combTwoNegAndOnePos = s[0] * s[len-2] *s[len-1]
     return combAllPostive > combTwoNegAndOnePos ? combAllPostive : combTwoNegAndOnePos
 }
