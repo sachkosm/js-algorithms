@@ -1,4 +1,4 @@
-//Remove Duplicate chars from a astring
+//Remove Duplicate chars from a a string
 var s='A sdS tgsxrv 5645gh#$ gd S Dtbfxe'
 //Using reduce
 var result = s.split('').sort().reduce((accumolator, current)=>{
@@ -21,6 +21,7 @@ console.log(result.join(''))
 
 //Remove duplicates using Set
 
-function solution(A){
-  return Array.from(new Set(A))
+function solution(s){
+  return Array.from(new Set(s))
 }
+console.log(solution(s))
