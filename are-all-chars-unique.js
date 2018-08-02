@@ -15,3 +15,21 @@ var allUniqueChars = function(string) {
 
 console.log(allUniqueChars('astyu')) //true
 console.log(allUniqueChars('astytu')) //false
+
+//==================
+
+function allUniqueChars2(s) {
+  var ch = {}
+  for(let i = 0; i < s.length; i++) {
+    //console.log(s[i])
+    if(ch[s[i]]) {
+      return false;
+    } else {
+      ch[s[i]] = 1;
+    }
+  }
+    return true; // if no match, return true
+}
+
+console.log(allUniqueChars2('astyu')) //true
+console.log(allUniqueChars2('astytu')) //false
