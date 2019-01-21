@@ -1,3 +1,13 @@
+
+
+//Using Set length Set of string makes a set of charchters of the string
+return new Set(str).size === str.length
+//Time: O(n)
+//Space: O(n)
+
+
+
+
 //Split to convert to an array and sort
 //Compare charachters that are next to each other
 const allUniqueChars = (str) => {
