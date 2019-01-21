@@ -1,3 +1,23 @@
+
+//Compare charachter searching from the back to front
+const allUniqueChars = (str) => {
+
+  for(let i =0; i< str.length; i++){
+      if(str.lastIndexOf(str[i]) !== i){ //if found the same charachet at diferent position then has duplicate
+        return false
+      }
+  }
+  return true
+}
+
+let str = 'astyu'
+console.log(allUniqueChars(str))
+let str2 = 'astytu'
+console.log(allUniqueChars(str2))
+
+
+
+
 //Check if all characters in a strings are unique
 var allUniqueChars = function(string) {
 
