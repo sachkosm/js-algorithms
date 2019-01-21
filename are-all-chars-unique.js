@@ -61,7 +61,7 @@ function allUniqueChars2(s) {
     if(ch[s[i]]) {
       return false;
     } else {
-      ch[s[i]] = 1;
+      ch[s[i]] = true;
     }
   }
     return true; // if no match, return true
