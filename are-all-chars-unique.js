@@ -1,3 +1,19 @@
+//Split to convert to an array and sort
+//Compare charachters that are next to each other
+const allUniqueChars = (str) => {
+    const charsArr = str.split('').sort()
+
+    for (let i = 1; i < charsArr.length; i++) {
+        if (charsArr[i] === charsArr[i - 1]){
+            return false
+        }
+    }
+
+    return true;
+}
+
+
+
 
 //Compare charachter searching from the back to front
 const allUniqueChars = (str) => {
